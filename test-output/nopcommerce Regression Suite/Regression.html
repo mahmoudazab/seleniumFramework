@@ -1,0 +1,265 @@
+<html>
+<head>
+<title>TestNG:  Regression</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 23 15:22:17 EET 2022</td>
+</tr>
+<tr><td>Total time:</td><td>142 seconds (142012 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.AddProductReviewTest.UserCanLogout()'><b>UserCanLogout</b><br>Test class: tests.AddProductReviewTest</td>
+<td></td>
+<td>1</td>
+<td>tests.AddProductReviewTest@4a8355dd</td></tr>
+<tr>
+<td title='tests.UserRegistrationTest.UserCanLogin()'><b>UserCanLogin</b><br>Test class: tests.UserRegistrationTest</td>
+<td></td>
+<td>1</td>
+<td>tests.UserRegistrationTest@18df8434</td></tr>
+<tr>
+<td title='tests.GuestCheckoutProductFromCartTest.UserCanSearchForProductsWithAutoSuggest()'><b>UserCanSearchForProductsWithAutoSuggest</b><br>Test class: tests.GuestCheckoutProductFromCartTest</td>
+<td></td>
+<td>4</td>
+<td>tests.GuestCheckoutProductFromCartTest@70cf32e3</td></tr>
+<tr>
+<td title='tests.RegisteredUserCheckoutProductTest.UserCanCheckoutProduct()'><b>UserCanCheckoutProduct</b><br>Test class: tests.RegisteredUserCheckoutProductTest</td>
+<td></td>
+<td>13</td>
+<td>tests.RegisteredUserCheckoutProductTest@4bdeaabb</td></tr>
+<tr>
+<td title='tests.AddProductToCompareTest.UserCanClearCompareList()'><b>UserCanClearCompareList</b><br>Test class: tests.AddProductToCompareTest</td>
+<td></td>
+<td>1</td>
+<td>tests.AddProductToCompareTest@4d0d9fe7</td></tr>
+<tr>
+<td title='tests.AddProductReviewTest.userCanAddReview()'><b>userCanAddReview</b><br>Test class: tests.AddProductReviewTest</td>
+<td></td>
+<td>2</td>
+<td>tests.AddProductReviewTest@4a8355dd</td></tr>
+<tr>
+<td title='tests.MyAccountTest.ResgistratedUserCanChangePassword()'><b>ResgistratedUserCanChangePassword</b><br>Test class: tests.MyAccountTest</td>
+<td></td>
+<td>3</td>
+<td>tests.MyAccountTest@5a59ca5e</td></tr>
+<tr>
+<td title='tests.UserRegistrationTest.UserCanLogout()'><b>UserCanLogout</b><br>Test class: tests.UserRegistrationTest</td>
+<td></td>
+<td>1</td>
+<td>tests.UserRegistrationTest@18df8434</td></tr>
+<tr>
+<td title='tests.RegisteredUserCheckoutProductTest.UserCanSearchWithAutoSuggest()'><b>UserCanSearchWithAutoSuggest</b><br>Test class: tests.RegisteredUserCheckoutProductTest</td>
+<td></td>
+<td>5</td>
+<td>tests.RegisteredUserCheckoutProductTest@4bdeaabb</td></tr>
+<tr>
+<td title='tests.AddProductToShoppingCartTest.UserCanAddProductToShoppingCart()'><b>UserCanAddProductToShoppingCart</b><br>Test class: tests.AddProductToShoppingCartTest</td>
+<td></td>
+<td>2</td>
+<td>tests.AddProductToShoppingCartTest@c430e6c</td></tr>
+<tr>
+<td title='tests.AddProductReviewTest.UserCanSearchWithAutoSuggest()'><b>UserCanSearchWithAutoSuggest</b><br>Test class: tests.AddProductReviewTest</td>
+<td></td>
+<td>5</td>
+<td>tests.AddProductReviewTest@4a8355dd</td></tr>
+<tr>
+<td title='tests.ChangeCurrencyTest.UserCanSearchWithAutoSuggest()'><b>UserCanSearchWithAutoSuggest</b><br>Test class: tests.ChangeCurrencyTest</td>
+<td></td>
+<td>4</td>
+<td>tests.ChangeCurrencyTest@536f2a7e</td></tr>
+<tr>
+<td title='tests.EmailFriendTest.UserCanLogout()'><b>UserCanLogout</b><br>Test class: tests.EmailFriendTest</td>
+<td></td>
+<td>1</td>
+<td>tests.EmailFriendTest@66982506</td></tr>
+<tr>
+<td title='tests.GuestCheckoutProductFromCartTest.UserCanViewOrderDetails()'><b>UserCanViewOrderDetails</b><br>Test class: tests.GuestCheckoutProductFromCartTest</td>
+<td></td>
+<td>7</td>
+<td>tests.GuestCheckoutProductFromCartTest@70cf32e3</td></tr>
+<tr>
+<td title='tests.ContactUsTest.TestContactUs()'><b>TestContactUs</b><br>Test class: tests.ContactUsTest</td>
+<td></td>
+<td>5</td>
+<td>tests.ContactUsTest@72bc6553</td></tr>
+<tr>
+<td title='tests.AddProductToWishListTest.UserCanRemoveProductFromCart()'><b>UserCanRemoveProductFromCart</b><br>Test class: tests.AddProductToWishListTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AddProductToWishListTest@312aa7c</td></tr>
+<tr>
+<td title='tests.AddProductReviewTest.UserCanRegisterSuccessfully()'><b>UserCanRegisterSuccessfully</b><br>Test class: tests.AddProductReviewTest</td>
+<td></td>
+<td>2</td>
+<td>tests.AddProductReviewTest@4a8355dd</td></tr>
+<tr>
+<td title='tests.SearchTest.UserCanSearchProducts()'><b>UserCanSearchProducts</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>3</td>
+<td>tests.SearchTest@65987993</td></tr>
+<tr>
+<td title='tests.MyAccountTest.UserCanLogin()'><b>UserCanLogin</b><br>Test class: tests.MyAccountTest</td>
+<td></td>
+<td>1</td>
+<td>tests.MyAccountTest@5a59ca5e</td></tr>
+<tr>
+<td title='tests.RegisteredUserCheckoutProductTest.UserCanRegisterSuccssfully()'><b>UserCanRegisterSuccssfully</b><br>Test class: tests.RegisteredUserCheckoutProductTest</td>
+<td></td>
+<td>3</td>
+<td>tests.RegisteredUserCheckoutProductTest@4bdeaabb</td></tr>
+<tr>
+<td title='tests.AddProductToShoppingCartTest.UserCanSearchForProductsWithAutoSuggest()'><b>UserCanSearchForProductsWithAutoSuggest</b><br>Test class: tests.AddProductToShoppingCartTest</td>
+<td></td>
+<td>4</td>
+<td>tests.AddProductToShoppingCartTest@c430e6c</td></tr>
+<tr>
+<td title='tests.EmailFriendTest.UserCanSearchWithAutoSuggest()'><b>UserCanSearchWithAutoSuggest</b><br>Test class: tests.EmailFriendTest</td>
+<td></td>
+<td>4</td>
+<td>tests.EmailFriendTest@66982506</td></tr>
+<tr>
+<td title='tests.EmailFriendTest.RegisteredUserCanSendTOFriend()'><b>RegisteredUserCanSendTOFriend</b><br>Test class: tests.EmailFriendTest</td>
+<td></td>
+<td>1</td>
+<td>tests.EmailFriendTest@66982506</td></tr>
+<tr>
+<td title='tests.AddProductToShoppingCartTest.UserCanRemoveProductFromCart()'><b>UserCanRemoveProductFromCart</b><br>Test class: tests.AddProductToShoppingCartTest</td>
+<td></td>
+<td>1</td>
+<td>tests.AddProductToShoppingCartTest@c430e6c</td></tr>
+<tr>
+<td title='tests.AddProductToWishListTest.UserCanAddProductToWishlist()'><b>UserCanAddProductToWishlist</b><br>Test class: tests.AddProductToWishListTest</td>
+<td></td>
+<td>1</td>
+<td>tests.AddProductToWishListTest@312aa7c</td></tr>
+<tr>
+<td title='tests.RegisteredUserCheckoutProductTest.RegisteredUserCanLogout()'><b>RegisteredUserCanLogout</b><br>Test class: tests.RegisteredUserCheckoutProductTest</td>
+<td></td>
+<td>1</td>
+<td>tests.RegisteredUserCheckoutProductTest@4bdeaabb</td></tr>
+<tr>
+<td title='tests.UserRegistrationTest.UserCanRegisterSuccessfully()'><b>UserCanRegisterSuccessfully</b><br>Test class: tests.UserRegistrationTest</td>
+<td></td>
+<td>2</td>
+<td>tests.UserRegistrationTest@18df8434</td></tr>
+<tr>
+<td title='tests.MyAccountTest.UserCanRegisterSuccessfully()'><b>UserCanRegisterSuccessfully</b><br>Test class: tests.MyAccountTest</td>
+<td></td>
+<td>4</td>
+<td>tests.MyAccountTest@5a59ca5e</td></tr>
+<tr>
+<td title='tests.EmailFriendTest.UserCanRegisterSuccessfully()'><b>UserCanRegisterSuccessfully</b><br>Test class: tests.EmailFriendTest</td>
+<td></td>
+<td>2</td>
+<td>tests.EmailFriendTest@66982506</td></tr>
+<tr>
+<td title='tests.RegisteredUserCheckoutProductTest.UserCanAddProductToShoppingCart()'><b>UserCanAddProductToShoppingCart</b><br>Test class: tests.RegisteredUserCheckoutProductTest</td>
+<td></td>
+<td>2</td>
+<td>tests.RegisteredUserCheckoutProductTest@4bdeaabb</td></tr>
+<tr>
+<td title='tests.ChangeCurrencyTest.TestChangeCurrency()'><b>TestChangeCurrency</b><br>Test class: tests.ChangeCurrencyTest</td>
+<td></td>
+<td>1</td>
+<td>tests.ChangeCurrencyTest@536f2a7e</td></tr>
+<tr>
+<td title='tests.GuestCheckoutProductFromCartTest.UserCanAddProductToShoppingCart()'><b>UserCanAddProductToShoppingCart</b><br>Test class: tests.GuestCheckoutProductFromCartTest</td>
+<td></td>
+<td>3</td>
+<td>tests.GuestCheckoutProductFromCartTest@70cf32e3</td></tr>
+<tr>
+<td title='tests.AddProductToCompareTest.UserCanCompareProducts()'><b>UserCanCompareProducts</b><br>Test class: tests.AddProductToCompareTest</td>
+<td></td>
+<td>15</td>
+<td>tests.AddProductToCompareTest@4d0d9fe7</td></tr>
+<tr>
+<td title='tests.AddProductToWishListTest.UserCanSearchWithAutoSuggest()'><b>UserCanSearchWithAutoSuggest</b><br>Test class: tests.AddProductToWishListTest</td>
+<td></td>
+<td>4</td>
+<td>tests.AddProductToWishListTest@312aa7c</td></tr>
+<tr>
+<td title='tests.MyAccountTest.UserCanLogout()'><b>UserCanLogout</b><br>Test class: tests.MyAccountTest</td>
+<td></td>
+<td>1</td>
+<td>tests.MyAccountTest@5a59ca5e</td></tr>
+<tr>
+<td title='tests.GuestCheckoutProductFromCartTest.UserCanCheckoutProduct()'><b>UserCanCheckoutProduct</b><br>Test class: tests.GuestCheckoutProductFromCartTest</td>
+<td></td>
+<td>13</td>
+<td>tests.GuestCheckoutProductFromCartTest@70cf32e3</td></tr>
+<tr>
+<td title='tests.SearchProductUsingAutoSuggest.UserCanSearchWithAutoSuggest()'><b>UserCanSearchWithAutoSuggest</b><br>Test class: tests.SearchProductUsingAutoSuggest</td>
+<td></td>
+<td>4</td>
+<td>tests.SearchProductUsingAutoSuggest@6c4906d3</td></tr>
+</table><p>
+</body>
+</html>
