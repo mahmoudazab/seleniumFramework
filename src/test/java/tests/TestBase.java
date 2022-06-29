@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
@@ -53,6 +54,17 @@ public class TestBase extends AbstractTestNGCucumberTests{
 		{
 			System.setProperty("webdriver.ie.driver" , System.getProperty("user.dir") + "\\drivers\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver ();
+		}
+		else if (browserName.equalsIgnoreCase("chrome-headless"))
+		{
+			System.setProperty("webdriver.chrome.driver" , System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
+
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless") ;
+			options.addArguments("--window-size=1920,1080") ;
+			driver=new ChromeDriver(options);
+			
+			
 		}
 	
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
